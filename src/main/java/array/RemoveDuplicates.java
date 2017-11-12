@@ -3,6 +3,12 @@ package array;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 给定一个有序数组，删除重复内容，使每个元素只出现一次，并返回新的长度。
+ * 给定nums = [1,1,2]，
+ *你的函数应该返回length = 2，num的前两个元素分别是1和2。
+ */
+
 public  class RemoveDuplicates {
     public static int removeDuplicates(int[] nums) {
         List<Integer> list = new LinkedList<Integer>();
