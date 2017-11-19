@@ -27,8 +27,8 @@ public class ReverseStrings {
 
 
     public static void main(String[] args) {
-        String s = "abcd";
-        String result = reverseStr(s,4);
+        String s = "abcdefgh";
+        String result = reverseStr(s,3);
 
         System.out.println(result);
 
