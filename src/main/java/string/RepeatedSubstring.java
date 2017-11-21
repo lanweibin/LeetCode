@@ -1,5 +1,8 @@
 package string;
 
+/**
+ * 459. Repeated Substring Pattern
+ */
 public class RepeatedSubstring {
     public static boolean repeatedSubstringPattern(String s) {
 //        int len = s.length();
