@@ -28,13 +28,29 @@ public class FindAllDuplicates {
         return list;
     }
 
+    public static List<Integer> findDuplicates2(int[] nums) {
+        List<Integer> result = new ArrayList<Integer>();
+        if(nums == null)
+            return result;
+        for(int i=0; i<nums.length; i++){
+            int location = Math.abs(nums[i])-1;
+            if(nums[location] < 0){
+                result.add(Math.abs(nums[i]));
+            }else{
+                nums[location] = -nums[location];
+            }
+        }
+        for(int i=0; i<nums.length; i++)
+            nums[i] = Math.abs(nums[i]);
 
+        return result;
+    }
 
     public static void main(String[] args) {
        int[] nums = {4,3,2,7,8,2,3,1};
 
-       List<Integer> list = findDuplicates(nums);
-
+      // List<Integer> list = findDuplicates(nums);
+        List<Integer> list = findDuplicates2(nums);
 
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i));
