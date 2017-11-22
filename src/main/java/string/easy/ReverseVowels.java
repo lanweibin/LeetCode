@@ -1,4 +1,4 @@
-package string;
+package string.easy;
 
 public class ReverseVowels {
     public static String reverseVowels(String s) {

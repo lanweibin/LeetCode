@@ -1,4 +1,4 @@
-package string;
+package string.easy;
 
 /**
  * 459. Repeated Substring Pattern

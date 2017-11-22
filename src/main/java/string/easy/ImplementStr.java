@@ -1,4 +1,4 @@
-package string;
+package string.easy;
 
 //28. Implement strStr()
 public class ImplementStr {

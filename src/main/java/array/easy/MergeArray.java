@@ -1,4 +1,4 @@
-package array;
+package array.easy;
 
 /**
  * 88. Merge Sorted Array

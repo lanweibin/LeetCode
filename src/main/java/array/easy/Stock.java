@@ -1,4 +1,4 @@
-package array;
+package array.easy;
 
 public class Stock {
     public static int maxProfit(int[] prices) {

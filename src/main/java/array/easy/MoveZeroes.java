@@ -1,4 +1,4 @@
-package array;
+package array.easy;
 
 /**
  * 给定一个数组nums，写一个函数将所有0的移动到它的末尾，同时保持非零元素的相对顺序。

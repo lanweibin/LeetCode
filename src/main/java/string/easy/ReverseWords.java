@@ -1,4 +1,4 @@
-package string;
+package string.easy;
 
 public class ReverseWords {
     public static String reverseWords(String s) {

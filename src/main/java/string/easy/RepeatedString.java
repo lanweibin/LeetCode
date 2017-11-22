@@ -1,4 +1,4 @@
-package string;
+package string.easy;
 
 /**
  * 686. Repeated String Match

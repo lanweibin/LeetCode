@@ -1,4 +1,4 @@
-package array;
+package array.easy;
 
 /**
  * 628. Maximum Product of Three Numbers
