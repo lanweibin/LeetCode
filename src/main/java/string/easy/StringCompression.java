@@ -47,9 +47,11 @@ public class StringCompression {
     }
 
     public static void main(String[] args) {
-        char[] chars = {'a','a','b','b','c','c','c'};
+
         char[] c = {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
-        int n = compress(chars);
+        char[] c1 = {'a','a','b','b','c','c','c'};
+        char[] c2 = {'a'};
+        int n = compress(c1);
 
         System.out.println(n);
     }
