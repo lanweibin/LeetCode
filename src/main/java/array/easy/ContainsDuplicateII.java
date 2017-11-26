@@ -18,6 +18,8 @@ public class ContainsDuplicateII {
                n = Math.abs(map.get(nums[i]) -i) ;
                if (n<=k){
                    b =true;
+               }else {
+                   map.put(nums[i],i);
                }
             }
 
@@ -27,8 +29,8 @@ public class ContainsDuplicateII {
     }
 
     public static void main(String[] args) {
-        int[] arr = {4,1,2,3,1,5};
-        boolean b = containsNearbyDuplicate(arr,3);
+        int[] arr = {1,0,1,1};
+        boolean b = containsNearbyDuplicate(arr,1);
 
         System.out.println(b);
     }
