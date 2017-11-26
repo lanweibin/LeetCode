@@ -41,6 +41,13 @@ public class StringCompression {
         }
         for(Map.Entry<Character,Integer> entry : hs.entrySet()){
             System.out.println(entry.getKey()+"----"+entry.getValue());
+
+
+        }
+
+        for (int i = 0; i < chars.length; i++) {
+            chars[i] = hs.get()
+
         }
 
         return result + hs.size();
