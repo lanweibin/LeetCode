@@ -46,7 +46,7 @@ public class StringCompression {
         }
 
         for (int i = 0; i < chars.length; i++) {
-            chars[i] = hs.get()
+//            chars[i] = hs.get();
 
         }
 
