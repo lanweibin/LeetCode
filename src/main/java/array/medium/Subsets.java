@@ -17,19 +17,23 @@ public class Subsets {
 
         for (int i = j; i < nums.length; i++){
             temp.add(nums[i]);
-            dfs(res, temp, nums, i + 1);
+             dfs(res, temp, nums, i + 1);
             temp.remove(temp.size() - 1);
         }
     }
 
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3};
+        int[] nums = {2,1,3};
         List<List<Integer>> res = subsets(nums);
 
-        for (int i = 0; i < res.size(); i++) {
-            System.out.println(res.get(i));
+//        for (int i = 0; i < res.size(); i++) {
+//            System.out.println(res.get(i));
+//
+//        }
 
+        for (List re : res){
+            System.out.println(re);
         }
     }
 }
