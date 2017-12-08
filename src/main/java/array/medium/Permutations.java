@@ -18,12 +18,11 @@ public class Permutations {
         if (templist.size() == nums.length){
             result.add(new ArrayList<>(templist));
         }else {
-            for (int i = 0; i < nums.length; i++) {
+            for (int i = 0; i < nums.length; i++) { //每次dfs时候，i都是0
                 if (templist.contains(nums[i])){
                     continue;
                 }
                 templist.add(nums[i]);
-
                 dfs(result, templist, nums);
                 templist.remove(templist.size() - 1);
             }
