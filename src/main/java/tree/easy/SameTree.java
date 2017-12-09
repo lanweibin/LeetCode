@@ -31,9 +31,7 @@ public class SameTree {
         }
 
 
-//        if (p.val != q.val){
-//            return false;
-//        }
+
         if (p.val != q.val) {//判断每个节点的值是否相等，如果去除此判断，则判断两个二叉树是否结构相等
             return false;
         }
@@ -56,10 +54,5 @@ public class SameTree {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
 
-
-
-
-    }
 }
