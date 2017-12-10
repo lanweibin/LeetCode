@@ -16,7 +16,7 @@ public class SymmetricTree {
 
         if (p == null || q == null) return false;
 
-        if (p.val != q.val ) return false;
+        if  (p.val != q.val ) return false;
 
         return isSame(p.left, q.right) && isSame(p.right, q.left);
 
