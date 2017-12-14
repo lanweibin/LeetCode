@@ -27,7 +27,7 @@ public class ReshapeMatrix {
         for (int i = 0; i < re.length; i++) {
             for (int j = 0; j < re[0].length; j++) {
 
-                re[i][j] = list.get(2);
+                re[i][j] = nums[i][j];
 
             }
 
@@ -39,7 +39,7 @@ public class ReshapeMatrix {
 
     public static void main(String[] args) {
         int[][] nums = {{1,2,3,4}};
-        int[][] re = matrixReshape(nums, 1, 4);
+        int[][] re = matrixReshape(nums, 2, 2);
 
         for (int i = 0; i < re.length; i++) {
             for (int j = 0; j < re[i].length; j++) {
