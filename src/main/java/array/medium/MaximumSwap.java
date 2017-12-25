@@ -29,6 +29,6 @@ public class MaximumSwap {
     }
 
     public static void main(String[] args) {
-        System.out.println(maximumsSwap(1234));
+        System.out.println(maximumsSwap(2736));
     }
 }
