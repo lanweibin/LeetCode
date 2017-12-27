@@ -8,49 +8,20 @@ import java.util.Set;
 //443. String Compression
 public class StringCompression {
     public static int compress(char[] chars) {
-        if (chars.length == 1){
-            return 1;
-        }
-        Map<Character,Integer> hs = new HashMap<Character, Integer>();
-
-        for (int i = 0; i < chars.length; i++) {
-
-            if (hs.get(chars[i]) == null){
-                hs.put(chars[i],1);
-            }else {
-                hs.put(chars[i],hs.get(chars[i])+1);
+        int indexAns = 0, index = 0;
+        while(index < chars.length){
+            char currentChar = chars[index];
+            int count = 0;
+            while(index < chars.length && chars[index] == currentChar){
+                index++;
+                count++;
             }
-
-
-
+            chars[indexAns++] = currentChar;
+            if(count != 1)
+                for(char c : Integer.toString(count).toCharArray())
+                    chars[indexAns++] = c;
         }
-
-        hs.size();
-
-        int result = 0;
-        for(Map.Entry<Character,Integer> entry : hs.entrySet()){
-            if (entry.getValue() == 1){
-                result = result;
-            }else if(entry.getValue() >1 && entry.getValue()<10){
-                result = result + 1;
-            }else if(entry.getValue() >=10 && entry.getValue()<100){
-                result = result + 2;
-            }else if(entry.getValue() >=100 && entry.getValue()<1000){
-                result = result + 3;
-            }
-        }
-        for(Map.Entry<Character,Integer> entry : hs.entrySet()){
-            System.out.println(entry.getKey()+"----"+entry.getValue());
-
-
-        }
-
-        for (int i = 0; i < chars.length; i++) {
-//            chars[i] = hs.get();
-
-        }
-
-        return result + hs.size();
+        return indexAns;
     }
 
     public static void main(String[] args) {
